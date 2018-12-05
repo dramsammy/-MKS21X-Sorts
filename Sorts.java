@@ -11,6 +11,8 @@ public class Sorts{
           indexLast = a;
         }
       }
+      change = ary[i];
+      ary[i] = temp;
       ary[i] = ary[indexLast];
     }
   }
