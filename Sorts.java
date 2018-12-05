@@ -20,17 +20,14 @@ public class Sorts{
     ary[i] = min;
     }
   }
-  //TEST
-  public static void main(String[] args) {
-    int[] Test = new int[5];
-    Test[0] = 0;
-    Test[1] = 3;
-    Test[2] = 7;
-    Test[3] = 10;
-    Test[4] = 4;
-    selectionsort(Test);
-    for (int i = 0; i < Test.length; i++){
-      System.out.println(Test[i]);
-    }
-  }
 }
+//   //TEST
+//   public static void main(String[] args) {
+//     int[] Test = new int[10];
+//     Test = {1,3,5,67,73,2,2,-1,23,-41};
+//     selectionsort(Test);
+//     for (int i = 0; i < Test.length; i++){
+//       System.out.println(Test[i]);
+//     }
+//   }
+// }
