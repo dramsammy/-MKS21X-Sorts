@@ -1,18 +1,17 @@
 public class Sorts{
   public static void selectionsort(int [] ary){
-    int temp;
-    int change;
+    int index = 0;
+    int indexLast = 0;
+    int temp = 0;
+    int change = 0;
     for (int i = 0; i < ary.length; i++){
-      temp = ary[i];
-      change = ary[i];
       for (int a = i; a < ary.length; a++){
-        if (ary[a] < change){
+        if (temp > ary[a]){
           temp = ary[a];
-          change = a;
+          indexLast = a;
         }
       }
-      ary[change] = i;
-      ary[i] = temp;
+      ary[i] = ary[indexLast];
     }
   }
   //TEST
