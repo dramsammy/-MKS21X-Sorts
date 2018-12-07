@@ -43,9 +43,16 @@ public class Sorts{
 
   //TEST
   public static void main(String[] args) {
+    System.out.println("--------Basic Testing--------");
     int[] Test = {1,3,5,67,73,2,2,-1,23,-41};
     System.out.println(Arrays.toString(Test));
     selectionsort(Test);
     System.out.println(Arrays.toString(Test));
+    int[] Test2 = {1,3,5,67,73,2,2,-1,23,-41};
+    System.out.println(Arrays.toString(Test2));
+    bubbleSort(Test2);
+    System.out.println(Arrays.toString(Test2));
+    System.out.println("--------Arg Testing--------");
+    
     }
   }
