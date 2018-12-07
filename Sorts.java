@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Random;
 public class Sorts{
   /**Selection sort of an int array.
  *Upon completion, the elements of the array will be in increasing order.
@@ -53,6 +54,11 @@ public class Sorts{
     bubbleSort(Test2);
     System.out.println(Arrays.toString(Test2));
     System.out.println("--------Arg Testing--------");
-    
+    if (args[0] != null){
+      int iterations = Integer.parseInt(args[0]);
+      for (int i = 0; i < iterations; i++){
+
+    }
     }
   }
+}
