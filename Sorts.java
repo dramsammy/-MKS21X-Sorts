@@ -5,7 +5,7 @@ public class Sorts{
  *Upon completion, the elements of the array will be in increasing order.
  *@param data  the elements to be sorted.
  */
-  public static void selectionsort(int [] ary){
+  public static void selectionSort(int [] ary){
     int min;
     int larger = 0;
     int indexM = 0;
@@ -41,24 +41,24 @@ public class Sorts{
       }
     }
   }
-
-  //TEST
-  public static void main(String[] args) {
-    System.out.println("--------Basic Testing--------");
-    int[] Test = {1,3,5,67,73,2,2,-1,23,-41};
-    System.out.println(Arrays.toString(Test));
-    selectionsort(Test);
-    System.out.println(Arrays.toString(Test));
-    int[] Test2 = {1,3,5,67,73,2,2,-1,23,-41};
-    System.out.println(Arrays.toString(Test2));
-    bubbleSort(Test2);
-    System.out.println(Arrays.toString(Test2));
-    System.out.println("--------Arg Testing--------");
-    if (args[0] != null){
-      int iterations = Integer.parseInt(args[0]);
-      for (int i = 0; i < iterations; i++){
-
-    }
-    }
-  }
+  //
+  // //TEST
+  // public static void main(String[] args) {
+  //   System.out.println("--------Basic Testing--------");
+  //   int[] Test = {1,3,5,67,73,2,2,-1,23,-41};
+  //   System.out.println(Arrays.toString(Test));
+  //   selectionsort(Test);
+  //   System.out.println(Arrays.toString(Test));
+  //   int[] Test2 = {1,3,5,67,73,2,2,-1,23,-41};
+  //   System.out.println(Arrays.toString(Test2));
+  //   bubbleSort(Test2);
+  //   System.out.println(Arrays.toString(Test2));
+  //   System.out.println("--------Arg Testing--------");
+  //   if (args[0] != null){
+  //     int iterations = Integer.parseInt(args[0]);
+  //     for (int i = 0; i < iterations; i++){
+  //
+  //   }
+  //   }
+  // }
 }
