@@ -41,6 +41,17 @@ public class Sorts{
       }
     }
   }
+  public static void insertionSort(int[] data){
+
+  }
+  public static void Shifter(int[] data, int element){
+    int shift;
+    for (int i = data.length - 1; i != -1; i--){
+      if (data[i] < element){
+        data[i + 1] = element;
+      }
+    }
+  }
   //
   // //TEST
   // public static void main(String[] args) {
