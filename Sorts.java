@@ -9,9 +9,6 @@ public class Sorts{
     int min;
     int larger = 0;
     int indexM = 0;
-    if (data.length == 0){
-      return data;
-    }
     for (int i = 0; i < ary.length; i++){
       min = ary[i];
       for (int a = i; a < ary.length; a++){
@@ -33,9 +30,6 @@ public class Sorts{
   public static void bubbleSort(int[] data){
     int first;
     int second;
-    if (data.length == 0){
-      return data;
-    }
     for (int i = 0; i <data.length; i++){
       for (int a = i; a < data.length; a++){
         first = data[i];
@@ -50,9 +44,6 @@ public class Sorts{
   public static void insertionSort(int[] data){
     int first;
     int start = 0;
-    if (data.length == 0){
-      return data;
-    }
     for (int i = 1; i <data.length; i++){
       first = data[i];
       for (int j = i; j - 1 >= 0 && j < data.length; j-- ){
