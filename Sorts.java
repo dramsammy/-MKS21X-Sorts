@@ -43,15 +43,17 @@ public class Sorts{
   }
   public static void insertionSort(int[] data){
     int first;
-    int start;
+    int start = 0;
     for (int i = 1; i <data.length; i++){
       first = data[i];
-      start = i;
-      if (first < data[start]){
-        data[i] = data[i -1];
-        i--;
+      for (int j = i; j < data.length; j++ ){
+        if (first < data[j]){
+          data[i] = data[i -1];
+          j--;
+          start = j;
       }
-      data[i] = first;
+    }
+      data[i] = data[start];
     }
   }
   // public static void Shifter(int[] data, int element){
@@ -85,5 +87,7 @@ public class Sorts{
   // }
   // Shifter(Sorted, 2);
   // System.out.println(Arrays.toString(Sorted));
+    insertionSort(Test);
+    System.out.println(Arrays.toString(Test));
     }
   }
