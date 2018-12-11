@@ -44,19 +44,25 @@ public class Sorts{
   public static void insertionSort(int[] data){
 
   }
-  public static void Shifter(int[] data, int element){
-    int shift;
-    for (int i = data.length - 1; i != -1; i--){
-      if (data[i] < element){
-        data[i + 1] = element;
-      }
-    }
-  }
+  // public static void Shifter(int[] data, int element){
+  //   int shift = data[data.length-1];
+  //   int temp;
+  //   for (int i = data.length - 1; i >= 0; i--){
+  //     if (data[i] < element){
+  //       for (int a = i + 1; a <data.length - 1; a++){
+  //         temp = data[a + 1];
+  //         data[a + 1] = data[a];
+  //
+  //       }
+  //     }
+  //   }
+  // }
   //
   // //TEST
   public static void main(String[] args) {
     System.out.println("--------Basic Testing--------");
     int[] Test = {1,3,5,67,73,2,2,-1,23,-41};
+    int[] Sorted = {1,2,3,4};
     // System.out.println(Arrays.toString(Test));
     // selectionsort(Test);
     // System.out.println(Arrays.toString(Test));
@@ -67,7 +73,7 @@ public class Sorts{
   //   }
   //   }
   // }
-  Shifter(Test, 10);
-  System.out.println(Test);
+  Shifter(Sorted, 2);
+  System.out.println(Arrays.toString(Sorted));
     }
   }
