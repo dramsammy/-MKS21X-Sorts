@@ -87,5 +87,11 @@ public class Sorts{
   // System.out.println(Arrays.toString(Sorted));
     insertionSort(Test);
     System.out.println(Arrays.toString(Test));
+    int[] randish = new int[1000];
+    for(int i = 0 ; i < randish.length; i++){
+      randish[i] =(int)(Math.random()*10000);
+    }
+    insertionSort(randish);
+    System.out.println(Arrays.toString(randish));
     }
   }
