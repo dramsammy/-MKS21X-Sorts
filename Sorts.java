@@ -46,13 +46,14 @@ public class Sorts{
     int start = 0;
     for (int i = 1; i <data.length; i++){
       first = data[i];
-      for (int j = i; j - 1 >= 0 && first < data[j - 1] ; j-- ){
-        data[j] = data[j -1];
-        data[j-1] = first;
+      start = i;
+      for (int j = i - 1; j >= 0 && first < data[j]; j-- ){
+        data[j + 1] = data[j];
+        data[j] = first;
       }
     }
     }
-  
+
   // public static void Shifter(int[] data, int element){
   //   int shift = data[data.length-1];
   //   int temp;
