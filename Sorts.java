@@ -43,14 +43,15 @@ public class Sorts{
   }
   public static void insertionSort(int[] data){
     int first;
-    int start = 0;
+    int j;
     for (int i = 1; i <data.length; i++){
       first = data[i];
-      start = i;
-      for (int j = i - 1; j >= 0 && first < data[j]; j-- ){
-        data[j + 1] = data[j];
-        data[j] = first;
+      j = i;
+      while(j -1 >= 0 && first < data[j-1]){
+        data[j] = data[j-1];
+        j--;
       }
+      data[j] = first;
     }
     }
 
